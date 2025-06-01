@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Havblink</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <input
+        type="radio"
+        id="menu-toggle-on"
+        class="menu__toggle"
+        name="menu-burger"
+      />
+
+      <input
+        type="radio"
+        id="menu-toggle-off"
+        class="menu__toggle"
+        name="menu-burger"
+        checked
+      />
+
+      <label for="menu-toggle-on" class="menu__burger">
+        <div class="menu__burger__container">
+          <div class="menu__burger__line__top"></div>
+          <div class="menu__burger__line__mid"></div>
+          <div class="menu__burger__line__bottom"></div>
+        </div>
+      </label>
+
+      <div class="menu__burger__overlay">
+        <a href="index.html">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+        <ul class="menu__burger__navigation">
+          <label for="menu-toggle-off" class="menu__burger">
+            <div class="menu__burger__container off">
+              <div class="menu__burger__line__top"></div>
+              <div class="menu__burger__line__mid"></div>
+              <div class="menu__burger__line__bottom"></div>
+            </div>
+          </label>
+          <li class="active"><a href="./index.html">Produkter</a></li>
+          <li><a href="./trainingoffer.html">Vinrejsen</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="./about.html">Om</a></li>
+        </ul>
+      </div>
+
+      <a href="index.html" class="logo-container">
+        <img src="./images/logo.svg" alt="" />
+      </a>
+      <nav class="navigation__container">
+        <a href="produkter.html">Produkter</a>
+        <a href="vinrejsen.html">Vinrejsen</a>
+        <a href="">Kontakt</a>
+        <a href="om.html">Om</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <img class="desktop-hidden" src="./images/hero-mobile.avif" alt="" />
+        <video
+          class="mobile-hidden"
+          src="./images/cinematic-grapes-at-summer-grapes-on-sunny-day-f-2023-01-31-02-35-38-utc.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="hero-content">
+          <div class="hero-title">
+            Havblink alkoholfri,
+            <br />
+            hvidvin uden kompromis
+          </div>
+          <div class="hero-subtitle mobile-hidden">
+            Dyrket med respekt for naturen, fremstillet med stolthed på Sydfyn.
+            <br />
+            Nyd vin med 0,0% alkohol og 100% god smag.
+          </div>
+          <a class="custom-btn" href="">Prøve Vores Vin</a>
+        </div>
+      </section>
+      <section class="products-section">
+        <div class="products-content">
+          <div class="products-title">
+            Alkoholfri nydelse - fem smage, en passion
+          </div>
+          <div class="products-subtitle">
+            Opdag dine favoritter blandt vores alkoholfri hvidvine. Klik på en
+            vin og læs mere om smag og servering.
+          </div>
+        </div>
+        <div class="items-container-mobile desktop-hidden">
+          <!-- Radio buttons to control the reviews -->
+          <input type="radio" id="dr1" name="tab-control" checked />
+          <input type="radio" id="dr2" name="tab-control" />
+          <input type="radio" id="dr3" name="tab-control" />
+          <input type="radio" id="dr4" name="tab-control" />
+          <input type="radio" id="dr5" name="tab-control" />
+          <div class="drinks">
+            <div class="slider">
+              <div class="drink drink1">
+                <label class="arrow non__visible">
+                  <img class="left" src="/images/arrow.svg" alt="" />
+                </label>
+                <div class="drink__container">
+                  <img src="./images/havblink-klassik.png" alt="" />
+                  <div class="drink-content">
+                    <div class="drink-title">Havblink Klassik</div>
+                    <div class="drink-description">
+                      Tør, ren og vinøs oplevelse
+                    </div>
+                  </div>
+                </div>
+                <label for="dr2" class="arrow arrow__right">
+                  <img src="/images/arrow.svg" alt="" />
+                </label>
+              </div>
+              <div class="drink drink2">
+                <label for="dr1" class="arrow arrow__left"
+                  ><img class="left" src="/images/arrow.svg" alt=""
+                /></label>
+                <div class="drink__container">
+                  <img src="./images/Brise.png" alt="" />
+                  <div class="drink-content">
+                    <div class="drink-title">Brise Tropsik</div>
+                    <div class="drink-description">Frugtig, frisk og let</div>
+                  </div>
+                </div>
+                <label for="dr3" class="arrow arrow__right"
+                  ><img src="/images/arrow.svg" alt=""
+                /></label>
+              </div>
+              <div class="drink drink3">
+                <label for="dr2" class="arrow arrow__left"
+                  ><img class="left" src="/images/arrow.svg" alt=""
+                /></label>
+                <div class="drink__container">
+                  <img src="./images/solskin.png" alt="" />
+                  <div class="drink-content">
+                    <div class="drink-title">Solskin Urte</div>
+                    <div class="drink-description">
+                      Urter, friskhed og karakter
+                    </div>
+                  </div>
+                </div>
+                <label for="dr4" class="arrow arrow__right"
+                  ><img src="/images/arrow.svg" alt=""
+                /></label>
+              </div>
+              <div class="drink drink4">
+                <label for="dr3" class="arrow arrow__left"
+                  ><img class="left" src="/images/arrow.svg" alt=""
+                /></label>
+                <div class="drink__container">
+                  <img src="./images/nordlys.png" alt="" />
+                  <div class="drink-content">
+                    <div class="drink-title">Nordlys Blid</div>
+                    <div class="drink-description">
+                      Blød, rund med mild sødme
+                    </div>
+                  </div>
+                </div>
+                <label for="dr5" class="arrow arrow__right"
+                  ><img src="/images/arrow.svg" alt=""
+                /></label>
+              </div>
+              <div class="drink drink5">
+                <label for="dr4" class="arrow arrow__left"
+                  ><img class="left" src="/images/arrow.svg" alt=""
+                /></label>
+                <div class="drink__container">
+                  <img src="./images/kustklar.png" alt="" />
+                  <div class="drink-content">
+                    <div class="drink-title">Kystklar Elegant</div>
+                    <div class="drink-description">
+                      Sprød, elegant med mineralsk kant
+                    </div>
+                  </div>
+                </div>
+                <label class="arrow non__visible"
+                  ><img src="/images/arrow.svg" alt=""
+                /></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items-container mobile-hidden">
+          <div class="item item1" data-background="item1-bg">
+            <img src="./images/havblink-klassik.png" alt="" />
+            <div class="details">
+              <div class="item-number">01</div>
+              <div class="item-title">Havblink Klassik</div>
+              <div class="item-description">Tør, ren og vinøs oplevelse</div>
+              <a class="custom-btn">se mere</a>
+            </div>
+          </div>
+          <div class="item item2">
+            <img src="./images/Brise.png" alt="" />
+            <div class="details">
+              <div class="item-number">02</div>
+              <div class="item-title">Brise Tropsik</div>
+              <div class="item-description">Frugtig, frisk og let</div>
+              <a class="custom-btn">se mere</a>
+            </div>
+          </div>
+          <div class="item item3">
+            <img src="./images/solskin.png" alt="" />
+            <div class="details">
+              <div class="item-number">03</div>
+              <div class="item-title">Solskin Urte</div>
+              <div class="item-description">Urter, friskhed og karakter</div>
+              <a class="custom-btn">se mere</a>
+            </div>
+          </div>
+          <div class="item item4">
+            <img src="./images/nordlys.png" alt="" />
+            <div class="details">
+              <div class="item-number">04</div>
+              <div class="item-title">Nordlys Blid</div>
+              <div class="item-description">Blød, rund med mild sødme</div>
+              <a class="custom-btn">se mere</a>
+            </div>
+          </div>
+          <div class="item item5">
+            <img src="./images/kustklar.png" alt="" />
+            <div class="details">
+              <div class="item-number">05</div>
+              <div class="item-title">Kystklar Elegant</div>
+              <div class="item-description">
+                Sprød, elegant med mineralsk kant
+              </div>
+              <a class="custom-btn">se mere</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="image-container">
+          <img src="./images/fc8b7c9667cfa6109c1bdaa5eaa35540.jpg" alt="" />
+        </div>
+        <div class="about-content">
+          <h2 class="about-title">Solaris - Druen der gør dansk vin mulig</h2>
+          <p class="about-description">
+            Solaris er den grønne drue, der har revolutioneret dansk
+            vinproduktion. Den trives i det kølige, nordiske klima og giver en
+            frisk, frugtig og balanceret smag - perfekt til alkoholfri hvidvin.
+          </p>
+          <p class="about-description">
+            Hos Havblink dyrker vi Solaris økologisk på sydfynske skråninger tæt
+            ved havet. Resultatet er en vin, du kan nyde med god smag i munden –
+            både smagsmæssigt og samvittighedsmæssigt.
+          </p>
+          <a class="custom-btn" href="">Læse mere</a>
+        </div>
+      </section>
+      <section class="wine__process-section">
+        <div class="image-container">
+          <img src="./images/40017dc1dfd104091eec8e1dc03cd67b.jpg" alt="" />
+        </div>
+        <div class="wine__process-content">
+          <div class="wine__process-title">
+            Mere end vin – det er passion, håndværk og bæredygtighed
+          </div>
+          <div class="wine__process-description">
+            Hos Havblink skaber vi alkoholfri, økologisk hvidvin på sydfynske
+            marker – med respekt for naturen, kvalitet og smag.Vinen er
+            produceret i balance med klimaet, så du kan nyde et godt glas – uden
+            alkohol og uden kompromis.
+          </div>
+          <a class="custom-btn">læse mere</a>
+        </div>
+      </section>
+      <section class="sustainability-section">
+        <div class="sustainability-title">Bæredygtighed i hver dråbe</div>
+        <div class="sustainability-cards">
+          <div class="card-1">
+            <div class="card-title">Dyrket i koldt klima</div>
+            <img src="./images/game-icons_grapes.png" alt="" />
+          </div>
+          <div class="card-2">
+            <div class="card-title">Nyt vinland, nye metoder</div>
+            <img src="./images/game-icons_cellar-barrels.png" alt="" />
+          </div>
+          <div class="card-3">
+            <div class="card-title">Lokalt og ærligt</div>
+            <img src="./images/twemoji_flag-denmark.png" alt="" />
+          </div>
+        </div>
+        <div class="sustainability-description">
+          Sydfyns sol, økologiske druer og vin skabt i balance med naturen.
+          <br />
+          Hos Havblink er bæredygtighed ikke en trend – det er en livsfilosofi.
+        </div>
+        <a class="custom-btn self__center">læse mere</a>
+      </section>
+      <section class="sources-section">
+        <div class="sources-title">
+          Du kan købe Havblinks alkoholfri vine hos:
+        </div>
+        <div class="logos-container">
+          <img src="./images/kvickly.png" alt="kvickly logo" />
+          <img src="./images/meny.png" alt="meny logo" />
+          <img src="./images/netto.png" alt="netto logo" />
+          <img src="./images/føtex.png" alt="føtex logo" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <img src="./images/footer_logo.svg" alt="Havblink logo" />
+      </div>
+      <div class="footer-links">
+        <a class="active" href="/index.html">Produkter</a>
+        <a href="">Vinrejsen</a>
+        <a href="">Kontakt</a>
+        <a href="">Om</a>
+      </div>
+      <div class="footer-socials">
+        <img src="./images/facebook.png" alt="Facebook logo" />
+        <img src="./images/instagram.png" alt="Instagram logo" />
+        <img src="./images/linkdin.png" alt="LinkedIn logo" />
+      </div>
+      <div class="footer-copyright">
+        <span>
+          &copy; 2025 Havblink <strong>Malek Karzoun</strong>. Alle rettigheder
+          forbeholdes.
+        </span>
+        <a href="">Privatslivpolitik</a>
+      </div>
+    </footer>
+  </body>
+</html>
