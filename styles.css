@@ -97,6 +97,10 @@ header {
   padding: 10px var(--section-padding-column);
 }
 
+header a:hover {
+  color: var(--accent-color);
+}
+
 header .logo-container img {
   width: 10rem;
 }
